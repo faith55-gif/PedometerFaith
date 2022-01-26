@@ -3,7 +3,19 @@ package com.example.pedometer;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Sensor accel;
     private static final String TEXT_NUM_STEPS = "Number of Steps: ";
     private int numSteps;
+    private TextView TvSteps;
+    private Button BtnStart;
+    private Button BtnStop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
 
-        BtnStart.setOnClickListener(new OnClickListener() {
+        BtnStart.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
@@ -45,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         });
 
 
-        BtnStop.setOnClickListener(new OnClickListener() {
+        BtnStop.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {

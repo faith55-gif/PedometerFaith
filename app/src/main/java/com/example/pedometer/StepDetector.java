@@ -1,5 +1,6 @@
-public class StepDetector {
+package com.example.pedometer;
 
+public class StepDetector {
     private static final int ACCEL_RING_SIZE = 50;
     private static final int VEL_RING_SIZE = 10;
 
@@ -61,3 +62,6 @@ public class StepDetector {
         oldVelocityEstimate = velocityEstimate;
     }
 }
+
+
+

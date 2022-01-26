@@ -1,5 +1,6 @@
-public class SensorFilter {
+package com.example.pedometer;
 
+public class SensorFilter {
     private SensorFilter() {
     }
 
@@ -43,3 +44,4 @@ public class SensorFilter {
     }
 
 }
+
