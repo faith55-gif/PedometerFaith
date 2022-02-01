@@ -29,4 +29,13 @@
         android:text="Stop Pedometer"
         />
 
+    <Button
+        android:id="@+id/btn_hb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StartHBM"
+        android:text="Monitor Heartbeat Rate"
+
+        />
+
 </LinearLayout>

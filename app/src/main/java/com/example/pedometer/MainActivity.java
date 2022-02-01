@@ -1,5 +1,6 @@
 package com.example.pedometer;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
@@ -94,4 +95,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         TvSteps.setText(TEXT_NUM_STEPS + numSteps);
     }
 
+    public void StartHBM(View view) {
+
+        Intent intent = new Intent(MainActivity.this, HeartRateMonitor.class);
+        startActivity(intent);
+    }
 }
